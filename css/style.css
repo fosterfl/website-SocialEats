@@ -1,0 +1,1432 @@
+/* reset --------------------------  */
+
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+dfn,
+del,
+p,
+blockquote,
+fieldset,
+input,
+textarea,
+select,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+button,
+canvas,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+address,
+caption,
+cite,
+code,
+th,
+dfn,
+del {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+fieldset,
+img {
+    border: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    cursor: pointer
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+input[type="search"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+input,
+button,
+textarea {
+    line-height: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input[type="hidden"],
+[hidden],
+.hidden {
+    display: none
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+.clearfix {
+    display: block
+}
+
+audio,
+canvas,
+video {
+    display: inline-block
+}
+
+a > img {
+    vertical-align: bottom
+}
+
+strong,
+.strong,
+b {
+    font-weight: bold
+}
+
+em,
+.italic,
+i {
+    font-style: italic
+}
+
+del,
+.del {
+    text-decoration: line-through
+}
+
+:focus {
+    outline: none
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+footer img {
+ width: 25%;
+}
+
+
+/*----------------------------------------------------------------------------------------
+                                        BENEFITS
+----------------------------------------------------------------------------------------*/
+
+.img-block-2col { text-align: left; }
+
+.img-block-2col .title h2:after {
+    left: 0;
+    margin-left: 0;
+}
+
+.screen-couple-right,
+.screen-couple-left {
+    position: relative;
+    xmax-width: 400px;
+    min-width: 280px;
+    overflow: hidden;
+    z-index:100;
+    max-height: 500px;    /* related to for single image :  .comments img */
+}
+
+.screen-couple-right:after,
+.screen-couple-left:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.screen-couple-right .screen {
+    position: relative;
+    float: right;
+}
+
+.screen-couple-left .screen {
+    position: relative;
+    float: left;
+}
+
+.screen-couple-right .above,
+.screen-couple-left .above { z-index: 3; }
+
+.screen-couple-right .beyond,
+.screen-couple-left .beyond {
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+}
+
+.screen-couple-left .beyond { right: 0; }
+
+.screen-couple-right .beyond { left: 0; }
+
+@media (max-width: 992px) and (min-width: 767px) {
+
+#benefits1,
+#benefits2 { font-size: 14px; }
+
+} @media (max-width: 767px) {
+
+.img-block-2col { text-align: center; }
+
+.img-block-2col .title h2:after {
+    left: 50%;
+    margin-left: -40px;
+}
+
+.screen-couple-right,
+.screen-couple-left { margin: 50px auto 0 auto; }
+
+}
+
+/*----------------------------------------------------------------------------------------
+                                        DOWNLOAD
+----------------------------------------------------------------------------------------*/
+
+#download { padding: 70px 0; }
+
+#download h2 { color: #fff; }
+
+#download h2 .icon { margin: 0 20px 0 0; }
+
+#download .comments {
+  background: none;
+}
+
+.bg-color-main {
+    background-size: cover;
+    background-image: url(../images/download_bg.jpg);
+    box-shadow: inset 0 0 0 400px #5DB7DEb0;   /* original rgba(27, 182, 251, 0.69);     #91C548b0 green  #5DB7DEb0 blue */
+}
+@media (max-width: 767px) {
+
+#download h2 { margin: 0; }
+
+#download h2 .icon {
+    margin: 0 0 10px 0;
+    display: block;
+}
+}
+
+div.download {
+    font-size: 40px;
+    font-weight: 300;
+}
+section {
+
+    padding: 120px 0;
+    position: relative;
+    background: #fff;
+    z-index: 2;
+    overflow: hidden;
+}
+
+a.goto h2 {
+    text-align: center;
+}
+
+
+
+/* tools --------------------------  */
+
+.clear {
+    clear: both;
+    display: block;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.clearfix:after,
+.wrap:after,
+.spanning:after,
+.content:after,
+.main:after,
+aside:after,
+section:after,
+article:after,
+.text:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.align-left {
+    float: left !important
+}
+
+.align-right {
+    float: right !important
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    display: block;
+}
+
+/* common --------------------------  */
+
+.comments .tab-prev,
+.comments .tab-next,
+.button-download:after {
+    background: url(../images/sprite.png) 0 0 no-repeat
+}
+
+html {
+    height: 100%;
+    background: white;
+}
+
+body {
+    height: 100%;
+    font: 16px/28px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #07020D;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.main {
+    min-height: 100%;
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+}
+
+a {
+    color: #91C548;  /* original #10bbf1 */
+    cursor: pointer;
+    background: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C57C48
+}
+
+a:active {
+    color: #c57c48
+}
+
+.error {
+    color: red !important;
+    border-color: red !important;
+}
+
+.success {
+    color: #00cc00 !important;
+    border-color: #00cc00 !important;
+}
+
+.disabled {
+    color: #999999 !important;
+    border-color: #999999 !important;
+    cursor: default !important;
+}
+
+.input-text,
+.textarea {
+    width: 100%;
+    float: left;
+    border: 2px solid #d8d8d8;
+    background: white;
+    height: 58px;
+    padding: 10px 21px;
+    font: 500 17px/34px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -ms-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -o-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -webkit-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.input-text:focus,
+.textarea:focus {
+    border-color: #aeaeae
+}
+
+.textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.button {
+    color: white;
+    background: #91C548;     /* original #10bbf1 */
+    height: 58px;
+    border: 2px solid #91C548;     /* original #10bbf1 */
+    font: 500 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 21px;
+    -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -ms-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -o-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -webkit-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background: #C57C48;
+    border-color: #C57C48;
+}
+
+.button:active {
+    background: #c57c48;
+    border-color: #c57c48;
+}
+
+a.button {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 54px;
+    color: white;
+}
+
+a.button:hover {
+    color: white
+}
+
+a.button:active {
+    color: white
+}
+
+a.button.button-stripe {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: white;
+}
+
+a.button.button-stripe:hover {
+    color: #07020D;
+    background-color: white;
+    border-color: white;
+}
+
+a.button.button-stripe:active {
+    color: #07020D;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+}
+
+::-webkit-input-placeholder {
+    color: #cccccc
+}
+
+:-moz-placeholder {
+    color: #cccccc
+}
+
+::-moz-placeholder {
+    color: #cccccc
+}
+
+:-ms-input-placeholder {
+    color: #cccccc
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+/* header --------------------------  */
+
+header {
+    padding: 104px 0;
+    background-image: linear-gradient(to bottom, rgba(145, 197, 72,1),rgba(145, 197, 72,.1)), url(../images/header.jpg);
+    background-repeat: no-repeat;
+    font: 24px/36px "Special Elite", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+header h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 500;
+    margin-bottom: 38px;
+}
+
+header h1 span {
+    font-weight: 300;
+    color: #000000;
+}
+
+header .autor {
+    padding: 12px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+header .autor a {
+    color: white
+}
+
+header .autor a:hover {
+    color: white;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+header .autor a:active {
+    color: white;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+header .buttons-wrapper {
+    padding-top: 53px
+}
+
+header .buttons-wrapper .button-stripe {
+    margin-left: 14px
+}
+
+.centering{
+  text-align: center;
+}
+
+.header-img {
+    float: right;
+    max-width: 20vw;
+    max-height: 500px;
+    padding-top: 10vh;
+    padding-right: 7vw;
+}
+
+
+.header-wrapper {
+    padding-top: 87px;
+    max-width: 655px;
+}
+
+.header-wrapper.centering.comingsoon {
+  display: inline;
+}
+
+.header-wrapper.centering.comingsoon img {
+  width: 50vw;
+}
+
+/* NAVBAR --------------------------  */
+/* Style the navbar */
+.topnav {
+  background-color: #000000; /* black looks nice*/
+  overflow: hidden;
+  z-index: 1000000;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* set size of logo image in navbar*/
+.topnav img {
+  height:2vh;
+  vertical-align: middle;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive .sticky {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* footer --------------------------  */
+
+footer {
+    background: #91C548;  /*  #91C548; #324a57;  */
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 90px 0;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* home --------------------------  */
+
+/* content --------------------------  */
+
+.spanning {
+    clear: both
+}
+#follow {
+    padding: 5vw;
+    font-size: large;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#follow .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 100px;
+}
+#follow .icons a{
+    padding: 0.5em;
+}
+
+
+.promo {
+    padding: 114px 0 54px
+}
+
+.promo-wrapper {
+    margin: 0 -15px
+}
+
+.promo-column {
+    padding: 0 15px 60px;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33%;
+}
+
+.promo-column img {
+    display: block;
+    margin-bottom: 23px;
+    width: 100px;
+}
+
+.promo-column h5 {
+    font: bold 18px/24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.promo-column hr {
+    display: none;
+}
+
+.simple {
+    padding: 104px 0 0px
+}
+
+.simple-content {
+    float: right;
+    padding-top: 37px;
+    width: 420px;
+}
+
+.simple-content h3 {
+    font: 700 48px/48px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border-bottom: solid 6px #f4f4f4;
+    padding-bottom: 43px;
+    margin-bottom: 43px;
+}
+
+.simple-content ul {
+    margin-bottom: 5px
+}
+
+.simple-content ul li {
+    font-size: 23px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-bottom: 31px;
+}
+
+.simple-content ul li img {
+    float: left;
+    margin-right: 23px;
+}
+
+.simple-content ul li span {
+    display: block;
+    overflow: hidden;
+}
+
+.simple-img {
+    float: left;
+    max-width: 587px;
+    width: 53%;
+}
+
+.simple-img img {
+    display: block;
+    margin: 0 auto;
+}
+
+.comments {
+    background: #91C548;     /* original #10bbf1 */
+    color: white;
+    text-align: center;
+    padding: 70px 0 60px;
+}
+
+.comments .box {
+    display: none;
+    padding: 0 195px 55px;
+}
+
+.comments .box.visible {
+    display: block
+}
+
+.comments .box h4 {
+    font: 500 36px/46px  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 37px;
+}
+
+.comments .box h4 a {
+    font-weight: bold;
+    color: white;
+}
+
+.comments .box h4 a:hover {
+    text-decoration: underline
+}
+
+.comments .box p {
+    font-size: 19px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.comments .tabs {
+    display: block;
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+}
+
+.comments .tabs li {
+    display: inline-block;
+    margin: 0 8px;
+    width: 11px;
+    height: 11px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+    cursor: pointer;
+    -moz-transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    -ms-transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    -o-transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.comments .tabs li:hover {
+    background-color: white;
+}
+
+.comments .tabs li.active {
+    background-color: transparent;
+    box-shadow: 0 0 0 2px white;
+}
+
+.comments .tab {
+    position: relative
+}
+
+.comments .tab-prev,
+.comments .tab-next {
+    position: absolute;
+    left: 98px;
+    top: 94px;
+    width: 23px;
+    height: 16px;
+    background-position: 0 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.comments .tab-prev:hover,
+.comments .tab-next:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.comments .tab-next {
+    left: auto;
+    right: 98px;
+    background-position: -50px 0;
+}
+
+.comments img {
+  width: 60%;
+}
+
+.single img {  /* related to couple images */
+  position: relative;
+  xmin-width: 280px;
+  overflow: hidden;
+  z-index:100;
+  xmax-height: 500px;
+  xwidth: 60%;
+}
+
+.demo {
+    background-color: #91C548;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.demo iframe {
+    height: 1100px;
+    width: 500px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.video-title {
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.video-subtitle {
+    font-size: 19px;
+    line-height: 25px;
+    color: #919191;
+    text-align: center;
+}
+
+.video {
+    padding: 108px 0 116px
+}
+
+.video-block {
+    padding-top: 34px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+.social-list {
+    display: inline-block
+}
+
+.social-list li {
+    font-size: 19px;
+    line-height: 38px;
+    float: left;
+    margin: 0 9px;
+}
+
+.social-list li a {
+    font-size: 15px;
+    line-height: 38px;
+    display: block;
+    width: 160px;
+    height: 38px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #3bcbff;
+    color: white;
+    text-align: center;
+    -moz-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -ms-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -o-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    -webkit-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+    transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;
+}
+
+.social-list li a:hover {
+    background-color: #6ed9ff
+}
+
+.social-list li a:active {
+    background-color: #08bdff
+}
+
+.social-list li a.social-facebook {
+    background-color: #1e3aa6
+}
+
+.social-list li a.social-facebook:hover {
+    background-color: #2649d1
+}
+
+.social-list li a.social-facebook:active {
+    background-color: #162b7b
+}
+
+.social-list li a.social-google {
+    background-color: #d72d26
+}
+
+.social-list li a.social-google:hover {
+    background-color: #e05650
+}
+
+.social-list li a.social-google:active {
+    background-color: #ac241e
+}
+
+.discover {
+    padding: 31px 0 25px;
+    background: #F1E9DB;
+}
+
+.discover-content {
+    float: right;
+    width: 50%;
+    padding: 77px 97px 50px 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.discover-content h2 {
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: bold;
+    margin-bottom: 29px;
+}
+
+.discover-button {
+    padding-top: 68px;
+    margin: 0 -10px;
+    clear: both;
+}
+
+.button-download {
+    height: 62px;
+    float: left;
+    font: 500 11px/13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-left: 61px;
+    padding-right: 0;
+    width: 180px;
+    text-align: left;
+    margin: 0 10px 20px;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button-download:after {
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 14px;
+    width: 32px;
+    height: 32px;
+    background-position: -100px 0;
+}
+
+.button-download.android:after {
+    background-position: -150px 0
+}
+
+.button-download-title {
+    padding: 11px 0 1px;
+    display: block;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: left;
+}
+
+.button-download-subtitle {
+    display: block;
+    font-size: 21px;
+    line-height: 23px;
+    text-align: left;
+}
+
+.button-download.comingsoon {
+  float: none;
+
+}
+
+.discover-img {
+    float: left;
+    width: 50%;
+}
+
+.discover-img img {
+    display: block
+}
+
+.discover-img-inside {
+    margin: 0 -40px
+}
+
+/* sidebar --------------------------  */
+
+/* media --------------------------  */
+
+/* ===[ Responsive all mobile sizes ]=== */
+
+@media (max-width: 979px) {
+  .newsletter-form {
+      min-width: 0
+  }
+
+  .newsletter-title {
+      font-size: 36px;
+      line-height: 48px;
+  }
+
+  .header-img {
+      display: none
+  }
+
+  .header-wrapper {
+      padding-top: 0;
+      max-width: none;
+  }
+
+  header {
+      text-align: center;
+      font-size: 19px;
+      line-height: 28px;
+      background-position-x: 50%;
+  }
+
+  header h1 {
+      font-size: 46px;
+      line-height: 52px;
+  }
+
+  header .buttons-wrapper .button {
+      margin-bottom: 20px
+  }
+
+  #connect h3 {
+      font: 24px/36px "Special Elite", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      padding-top: 20px;
+      text-align: center;
+  }
+
+  #connect ul {
+      padding: 10px;
+      text-align: left;
+      background-color: rgba(255,255,255,0.2);
+  }
+
+  #connect li img {
+      float: left;
+      padding-right: 1em;
+  }
+
+  #connect hr {
+      width: auto;
+  }
+
+
+  #connect {
+    padding: 0;
+    background-image:
+    linear-gradient(to top, rgba(145, 197, 72,0.8),rgba(0, 0, 0,.5)), url(../images/connect.png);
+    background-repeat: no-repeat;
+    color: white;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-origin: content-box;
+  }
+
+
+
+  .promo-column {
+      width: auto;
+      max-width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      text-align: center;
+  }
+
+  .promo-column img {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .promo-column hr {
+    display: block;
+  	height: 4px;
+  	width: 70px;
+  	text-align: center;
+  	position: relative;
+  	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
+  	background: rgb(145, 197, 72); /* Old browsers */
+  	background: -moz-linear-gradient(left, rgba(145, 197, 72,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+  	background: -webkit-linear-gradient(left, rgba(145, 197, 72,1) 0%, rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  	background: linear-gradient(to right, rgba(145, 197, 72,1) 0%, rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91c548', endColorstr='#000000', GradientType=1 ); /* IE6-9 */
+  	margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  	border: 0;
+  }
+
+  .simple-content {
+      float: none;
+      width: auto;
+      padding-top: 0;
+  }
+
+  .simple-content h3 {
+      font-size: 36px;
+      line-height: 46px;
+      text-align: center;
+  }
+
+  .simple-content ul {
+      max-width: 310px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .simple-img {
+      float: none;
+      width: auto;
+      max-width: none;
+      margin-left: -80px;
+      margin-right: -80px;
+  }
+
+  .comments .box {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  .comments .tab-prev,
+  .comments .tab-next {
+      display: none
+  }
+
+  .social-list li {
+      float: none;
+      text-align: center;
+      padding-top: 20px;
+  }
+
+  .social-list li:first-child {
+      padding-top: 0
+  }
+
+  .social-list li a {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .video-title {
+      font-size: 36px;
+      line-height: 46px;
+  }
+
+  .discover-content {
+      float: none;
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+  }
+
+  .discover-content h2 {
+      font-size: 60px;
+      line-height: 60px;
+  }
+
+  .discover-img {
+      float: none;
+      width: auto;
+  }
+
+  .discover-img img {
+      margin: 0 auto
+  }
+
+  .discover-button {
+      text-align: center
+  }
+
+  .discover-button .button-download {
+      float: none;
+      display: inline-block;
+  }
+
+  .comments .tabs li {
+      width: 18px;
+      height: 18px;
+      margin: 0 14px;
+  }
+  .desktop {
+      width: 400px;
+      height: 200px;
+  }
+}
+
+/* ===[ Responsive just mobile portrait ]=== */
+
+@media (max-width: 479px) {
+  header .buttons-wrapper .button.button-stripe {
+      margin-left: 0
+  }
+
+  .discover-content h2 {
+      font-size: 36px;
+      line-height: 46px;
+  }
+  .desktop {
+      width: 400px;
+      height: 200px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .comments .tab-prev,
+  .comments .tab-next,
+  /*.button-download:after,*/
+  .comments .tab-prev,
+  .comments .tab-next,
+  /*.button-download:after*/ {
+      background: url(../images/sprite@2x.png) 0 0 no-repeat;
+      -moz-background-size: 200px 50px;
+      -webkit-background-size: 200px 50px;
+      -o-background-size: 200px 50px;
+      background-size: 200px 50px;
+  }
+  .desktop {
+      width: 400px;
+      height: 200px;
+  }
+
+}
+
+
+hr {
+	height: 4px;
+	width: 100px;
+	position: relative;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
+	background: rgb(145, 197, 72); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(145, 197, 72,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(145, 197, 72,1) 0%, rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(145, 197, 72,1) 0%, rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91c548', endColorstr='#000000', GradientType=1 ); /* IE6-9 */
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+
+#connect {
+   padding: 0;
+   background-image: linear-gradient(to top, rgba(145, 197, 72,0.8),rgba(0, 0, 0,.5)), url(../images/connect.png);
+   background-repeat: no-repeat;
+   color: white;
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   position: relative;
+ }
+
+
+.demo img {
+    max-height: 600px;
+ }
+
+
+.hide {
+  display: none;
+}
+
+.hide .button {
+  background: #c57c48;
+}
+
+.hide:hover {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  -ms-transformtranslate(-50%,-50%);
+}
+
+#GetStarted:hover + .hide {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  -ms-transformtranslate(-50%,-50%);
+}
